@@ -1,9 +1,24 @@
-import React from 'react'
+import React,{useEffect,useState} from "react";
+import Cards from "./components/Cards";
+import { Box } from "@mui/material";
+import getCovidData from "./apis/getCovidData";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  const [data, setData] = useState([]);
 
-export default App
+  useEffect(() => {
+    const getData = async () => {
+      const { data } = await getCovidData.get(URL);
+      setData(data);
+    };
+    getData();
+  }, [URL]);
+
+  return (
+    <Box>
+      <Cards data={data} />
+    </Box>
+  );
+};
+
+export default App;
