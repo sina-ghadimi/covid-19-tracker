@@ -5,6 +5,7 @@ import getCovidData from "./apis/getCovidData";
 import Cards from "./components/Cards";
 import CoutrySelect from "./components/CoutrySelect";
 import Chart from "./components/Chart";
+import image from "./images/image.png";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -37,6 +38,7 @@ const App = () => {
         gap: "36px",
       }}
     >
+      <img src={image} alt="coronavirus logo" />
       <Cards data={data} />
       <CoutrySelect
         data={data}
