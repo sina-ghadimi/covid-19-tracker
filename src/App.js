@@ -43,7 +43,7 @@ const App = () => {
         country={country}
         handleCountryChange={handleCountryChange}
       />
-      <Chart data={data} country={country} />
+      <Chart data={data} />
     </Box>
   );
 };
