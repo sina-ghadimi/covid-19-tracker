@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FormControl, NativeSelect } from "@mui/material";
-import getCovidData from "../api/getCovidData";
+import getCovidData from "../apis/getCovidData";
 
 const CoutrySelect = ({ handleCountryChange }) => {
   const [countriesInfo, setCountriesInfo] = useState([]);
