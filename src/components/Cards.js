@@ -44,7 +44,7 @@ const Cards = ({ data }) => {
             <Countup start={0} end={data.deaths} duration={2} separator="," />
           </Typography>
           <Typography>{new Date().toDateString()}</Typography>
-          <Typography>Number of Deaths cases of covid-19</Typography>
+          <Typography>Number of Death cases of covid-19</Typography>
         </CardContent>
       </Card>
     </Stack>
