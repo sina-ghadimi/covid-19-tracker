@@ -18,4 +18,4 @@ Material ui v5
 
 ## ScreenShot of Project
 
-[covid-19-tracker.jpeg](src/images/covid-19-tracker.jpeg)
+![covid-19-tracker.jpeg](src/images/covid-19-tracker.jpeg)
